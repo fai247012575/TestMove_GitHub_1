@@ -32,7 +32,7 @@ public class CameraController : MonoBehaviour
 
     private void Update()
     {
-        invertXVal = (invertX) ? -1 : 1;
+        invertXVal = (invertX) ? 1 : 1;
         invertYVal = (invertY) ? -1 : 1;
 
         rotationX += Input.GetAxis("Mouse Y") * invertYVal * rotationSpeed;
